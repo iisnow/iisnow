@@ -36,7 +36,12 @@
 
     //先写个单机版，之后连个服务器，随机放在服务器实现并记录结果
     function roll(){
+        if(nameGet.value == ""){
+            alert('先输入名字，没名字我就不知道谁在Roll了');
+            return;
+        }
         resultSet.value = (Math.floor(Math.random() * 120) % 6 + 1);
+        alert(`[${nameGet.value}]Roll了${resultSet.value}点`);
     }
 </script>
 
