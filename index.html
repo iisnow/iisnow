@@ -12,8 +12,17 @@
 
 <body>
     <div class="container">
+        <h1>Roll TMD</h1>
         <div class="row">
-            <a class="waves-effect waves-light btn">Roll</a>
+            <div class="input-field col s6">
+                <input placeholder="" id="name" type="text" class="validate">
+                <label for="first_name">你的名字</label>
+            </div>
+            <a class="waves-effect waves-light btn" id="startRoll">Roll</a>
+            <div class="input-field col s6">
+                <input disabled value="I am not editable" id="result" type="text" class="validate">
+                <label for="disabled">结果</label>
+            </div>
         </div>
     </div>
 </body>
