@@ -15,7 +15,7 @@
         <h1>Roll TMD</h1>
         <div class="row">
             <div class="input-field col s4">
-                <input placeholder="" id="name" type="text" class="validate">
+                <input id="name" type="text" class="validate">
                 <label for="first_name">你的名字</label>
             </div>
             <a class="waves-effect waves-light btn" id="startRoll">Roll</a>
@@ -31,10 +31,8 @@
     var resultSet = document.querySelector("#result");
 
     var rollBack = document.querySelector("a#startRoll");
-
-    document.onload = ()=>{
-        rollBack.onclick = roll;
-    }
+    rollBack.onclick = roll;
+    
 
     //先写个单机版，之后连个服务器，随机放在服务器实现并记录结果
     function roll(){
