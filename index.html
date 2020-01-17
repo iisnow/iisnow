@@ -27,7 +27,19 @@
     </div>
 </body>
 <script>
+    var nameGet = document.querySelector("#name");
+    var resultSet = document.querySelector("#result");
 
+    var rollBack = document.querySelector("a#startRoll");
+
+    document.onload = ()=>{
+        rollBack.onclick = roll;
+    }
+
+    //先写个单机版，之后连个服务器，随机放在服务器实现并记录结果
+    function roll(){
+        resultSet.value = (Math.floor(Math.random() * 120) % 6 + 1);
+    }
 </script>
 
 </html>
