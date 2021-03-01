@@ -11,9 +11,22 @@
 </head>
 
 <body>
-	<div class="container">
-		<div class="row">
-			<a class="waves-effect waves-light btn" onclick="jumpRoll()">Roll</a>
+	<nav>
+		<div class="nav-wrapper">
+			<a href="#" class="brand-logo center">IISNOW</a>
+		</div>
+	</nav>
+	<div class="col s12">
+		<div class="container">
+			<div class="row">
+				<h4><a class="waves-effect waves-light btn" onclick="jumpRoll()">Roll</a></h4>
+			</div>
+			<div class="row">
+				<h4><a class="waves-effect waves-light btn" onclick="jumpGame()">Game</a></h4>
+			</div>
+			<div class="row">
+				<h4><a class="waves-effect waves-light btn" onclick="jumpMain()">Login</a></h4>
+			</div>
 		</div>
 	</div>
 </body>
@@ -22,7 +35,13 @@
 		window.location = "http://111.229.204.88";
 	}
 
-	
+	function jumpGame() {
+		window.location = "http://111.229.204.88/game";
+	}
+
+	function jumpMain() {
+		window.location = "http://111.229.204.88/main";
+	}
 </script>
 
 </html>
