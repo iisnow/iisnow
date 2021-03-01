@@ -2,24 +2,27 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Home Page</title>
+	<meta charset="UTF-8">
+	<title>Home Page</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 
 <body>
-    <div class="container" id="tag">
-       跳转中
-    </div>
+	<div class="container">
+		<div class="row">
+			<a class="waves-effect waves-light btn" onclick="jumpRoll()">Roll</a>
+		</div>
+	</div>
 </body>
 <script>
-    window.onload = ()=>{
-       window.location = "http://111.229.204.88";
-       //document.querySelector("#tag").textContent = "跳不动了"
-    }
+	function jumpRoll() {
+		window.location = "http://111.229.204.88";
+	}
+
+	
 </script>
 
 </html>
